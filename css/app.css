@@ -61,6 +61,56 @@ body .container {
   border-radius: 0px;
 }
 
+.carousel {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  bottom: 0
+}
+.carousel-cell{
+  width: 55%;
+  height: 100px;
+  bottom: 0;
+  margin-right: 10px;
+  background: #fff;
+  border-radius: 10px;
+  transition: all .2s ease-in-out;
+  -webkit-box-shadow: 5px 7px 5px 0 rgba(0,0,0,.13);
+  box-shadow: 5px 7px 5px 0 rgba(0,0,0,.13);
+}
+.carousel-cell.is-selected {
+  height: 240px;
+  transform: scale(0.8);
+}
+.flickity-viewport {
+  height: 230px !important;
+}
+.flickity-page-dots {
+  display: none
+}
+.flickity-button {
+  display: none
+}
+#company {
+  background: #26de81;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  height: 70px;
+  margin-left: 0;
+  margin-right: 0;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+#company img{
+  height: 50px;
+  width: auto;
+}
+
 @media only screen and (min-width: 576px) {
   .navbar {
     position: relative;
